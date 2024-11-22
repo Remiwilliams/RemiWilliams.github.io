@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         nav {
@@ -42,33 +43,31 @@
         }
 
         .home-container {
-            padding: 20px;
+            padding: 50px 20px;
             text-align: center;
+            background-color: white;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 900px;
+            margin: 40px auto;
         }
 
         .home-heading {
             font-size: 2.5rem;
             margin-bottom: 20px;
+            color: #333;
         }
 
         .home-introduction {
             font-size: 1.2rem;
+            color: #555;
             margin-bottom: 30px;
         }
 
         .home-logo img {
             max-width: 150px;
             margin-top: 20px;
-        }
-
-        .home-skills {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .skills-heading {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
         }
 
         .content-container {
@@ -81,15 +80,27 @@
 
         .content-container ul {
             margin-left: 20px;
+            list-style-type: disc;
+            color: #555;
         }
 
         .content-container a {
-            color: #333;
+            color: #0066cc;
             text-decoration: none;
         }
 
         .content-container a:hover {
             text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -98,7 +109,7 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="index.html">Index</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="Employment.html">Employment</a></li>
             <li><a href="Projects.html">Projects</a></li>
             <li><a href="Skills.html">Skills</a></li>
@@ -109,7 +120,13 @@
     <!-- Home Content -->
     <div class="home-container">
         <h1 class="home-heading">Welcome to My Professional Portfolio</h1>
-        <p class="home-introduction">This website showcases my skills, projects, and professional experience. It is a reflection of my journey and passion for technology, data, and business operations.</p>
+        <p class="home-introduction">
+            I am a double major graduate in <strong>Management Information Systems (MIS)</strong> and <strong>Marketing</strong> from the <strong>University of Oklahoma</strong>, graduating in December 2024. During my time at OU, I served in multiple leadership roles, including being part of <strong>Alpha Chi Omega</strong>, the <strong>Big Event Operation Staff</strong>, and an executive team member of the <strong>OU Dance Marathon</strong>. These experiences have shaped me into a well-rounded individual with a passion for technology, business strategy, and community service.
+        </p>
+
+        <p class="home-introduction">
+            This website serves as a reflection of my professional journey, skills, and projects. I invite you to explore my experience and learn more about how I can contribute to a dynamic and innovative organization.
+        </p>
 
         <!-- Logo Image with link -->
         <div class="home-logo">
@@ -119,6 +136,10 @@
         </div>
     </div>
 
-  
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Remi Williams. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
