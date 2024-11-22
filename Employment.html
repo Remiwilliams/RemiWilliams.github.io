@@ -9,11 +9,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
         }
 
         nav {
             background-color: #333;
             overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav ul {
@@ -42,22 +46,66 @@
         }
 
         .employment-container {
+            max-width: 1000px;
+            margin: 50px auto;
             padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         h1 {
             text-align: center;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
         }
 
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
+        .job-card {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .job-card:hover {
+            background-color: #ecf1f8;
         }
 
         .company-name {
             font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2980b9;
+        }
+
+        .job-description {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -76,18 +124,34 @@
     <div class="employment-container">
         <h1>Employment History</h1>
 
-        <p><span class="company-name">Coca-Cola</span> - Campus Ambassador</p>
-        <p>Facilitated, coordinated, and managed university shipments for sponsorship and experimental activities. Created authentic content representing the Coca-Cola Co. brands on Instagram, Snapchat, and LinkedIn. Executed 12 events highlighting new products and gathering market insights.</p>
+        <div class="job-card">
+            <p class="company-name">Coca-Cola</p>
+            <p class="job-title">Campus Ambassador</p>
+            <p class="job-description">Facilitated, coordinated, and managed university shipments for sponsorship and experimental activities. Created authentic content representing the Coca-Cola Co. brands on Instagram, Snapchat, and LinkedIn. Executed 12 events highlighting new products and gathering market insights.</p>
+        </div>
 
-        <p><span class="company-name">Oncor Electric Delivery</span> - Technology, Measurement, and Customer Engagement Intern</p>
-        <p>Ensured data integrity by verifying and updating system records, contributing to more accurate and reliable business operations. Gained in-depth knowledge of the electric delivery process, including the workflow and challenges in power distribution. Collaborated with and learned from diverse departments, gaining insights into cross-functional operations and team dynamics.</p>
+        <div class="job-card">
+            <p class="company-name">Oncor Electric Delivery</p>
+            <p class="job-title">Technology, Measurement, and Customer Engagement Intern</p>
+            <p class="job-description">Ensured data integrity by verifying and updating system records, contributing to more accurate and reliable business operations. Gained in-depth knowledge of the electric delivery process, including the workflow and challenges in power distribution. Collaborated with and learned from diverse departments, gaining insights into cross-functional operations and team dynamics.</p>
+        </div>
 
-        <p><span class="company-name">Cotton Bowl Classic</span> - Driver Program</p>
-        <p>Coordinated transportation logistics for coaches, staff, and family members, ensuring smooth arrivals and departures for event participants. Assisted with hospitality services and event setup, including welcoming players and managing event preparations. Supported day-of-event operations, including the national anthem ceremony, setting up the award stage, and facilitating the trophy presentation.</p>
+        <div class="job-card">
+            <p class="company-name">Cotton Bowl Classic</p>
+            <p class="job-title">Driver Program</p>
+            <p class="job-description">Coordinated transportation logistics for coaches, staff, and family members, ensuring smooth arrivals and departures for event participants. Assisted with hospitality services and event setup, including welcoming players and managing event preparations. Supported day-of-event operations, including the national anthem ceremony, setting up the award stage, and facilitating the trophy presentation.</p>
+        </div>
 
-        <p><span class="company-name">Premier Asset Management</span> - Intern</p>
-        <p>Led the onboarding of new asset management software—Argus Enterprise. Assisted with the preparation of leases, proposals, and contracts. Filed and organized company documents using electronic formats.</p>
+        <div class="job-card">
+            <p class="company-name">Premier Asset Management</p>
+            <p class="job-title">Intern</p>
+            <p class="job-description">Led the onboarding of new asset management software—Argus Enterprise. Assisted with the preparation of leases, proposals, and contracts. Filed and organized company documents using electronic formats.</p>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
