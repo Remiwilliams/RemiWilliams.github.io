@@ -9,11 +9,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
         }
 
         nav {
             background-color: #333;
             overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav ul {
@@ -42,18 +46,56 @@
         }
 
         .content-container {
-            padding: 20px;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         h1 {
             text-align: center;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
         }
 
-        p {
-            font-size: 1.2rem;
+        .project-card {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            background-color: #ecf1f8;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2980b9;
+        }
+
+        .project-description {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 10px;
             line-height: 1.6;
-            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -72,16 +114,25 @@
     <div class="content-container">
         <h1>Projects</h1>
 
-        <p><strong>Project 1: IBC - CEO</strong></p>
-        <p>As the CEO of the IBC project, I led a team focused on business strategy and management...</p>
+        <div class="project-card">
+            <p class="project-title">Project 1: IBC - CEO</p>
+            <p class="project-description">As the CEO of the IBC project, I led a team focused on business strategy and management. We identified key challenges and worked towards implementing innovative solutions. My leadership focused on maximizing team potential and ensuring the achievement of our project goals.</p>
+        </div>
 
-        <p><strong>Project 2: Field Project - Email Processing Tool</strong></p>
-        <p>For this project, I developed an automated email processing tool using Power Automate...</p>
+        <div class="project-card">
+            <p class="project-title">Project 2: Field Project - Email Processing Tool</p>
+            <p class="project-description">For this project, I developed an automated email processing tool using Power Automate. The tool streamlined the process of handling large volumes of incoming emails, improving efficiency and reducing human error. I designed the system architecture and collaborated with the team for testing and deployment.</p>
+        </div>
 
-        <p><strong>Project 3: Data Analytics Final Project - Power BI Dashboard</strong></p>
-        <p>For my Data Analytics final project, I designed and built an interactive dashboard...</p>
+        <div class="project-card">
+            <p class="project-title">Project 3: Data Analytics Final Project - Power BI Dashboard</p>
+            <p class="project-description">For my Data Analytics final project, I designed and built an interactive dashboard using Power BI. The dashboard visualized key business metrics, providing insights into sales, customer behavior, and marketing performance. My project emphasized data visualization best practices and interactive reporting for enhanced decision-making.</p>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
-
